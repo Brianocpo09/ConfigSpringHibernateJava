@@ -30,7 +30,7 @@ public class SUsuarioDAO implements ISUsuarioDAO{
         return sessionFactory.getCurrentSession();
     }
     
-    @SuppressWarnings("unchecked")
+    //@SuppressWarnings("unchecked")
     @Override
     public List<SUsuario> getAllUsuario() {
         String hql = "FROM SUsuario ";
@@ -49,9 +49,12 @@ public class SUsuarioDAO implements ISUsuarioDAO{
 
     @Override
     public void updateUsuario(SUsuario usuario) {
-        SUsuario u = getUsuarioById(Integer.parseInt(usuario.getClaveUsu()));
+        SUsuario u = getUsuarioById(usuario.getCodigoUsu());
         u.setClaveUsu(usuario.getClaveUsu());
         u.setNombreUsu(usuario.getNombreUsu());
+        u.setEstadoUsu(usuario.getEstadoUsu());
+        u.setCodigoTus(usuario.getCodigoTus());
+        u.setUsuarioUsu(usuario.getUsuarioUsu());
         getCurrentSession().update(u);
     }
 

@@ -6,8 +6,12 @@ E:\PROYECTOS\Netbeans\ConfigSpringHibernateJava\src\main\java\com\core\config\Mv
 E:\PROYECTOS\Netbeans\ConfigSpringHibernateJava\src\main\java\com\core\daoInterface\ISUsuarioDAO.java
 E:\PROYECTOS\Netbeans\ConfigSpringHibernateJava\src\main\java\com\core\dao\SUsuarioDAO.java
 E:\PROYECTOS\Netbeans\ConfigSpringHibernateJava\src\main\java\com\core\config\BddConfig.java
+E:\PROYECTOS\Netbeans\ConfigSpringHibernateJava\src\main\java\com\core\serviceInterface\ISTipoUsuarioService.java
 E:\PROYECTOS\Netbeans\ConfigSpringHibernateJava\src\main\java\com\core\config\SecurityConfig.java
 E:\PROYECTOS\Netbeans\ConfigSpringHibernateJava\src\main\java\com\core\controller\LoginController.java
 E:\PROYECTOS\Netbeans\ConfigSpringHibernateJava\src\main\java\com\core\controller\RestControllerMVC.java
+E:\PROYECTOS\Netbeans\ConfigSpringHibernateJava\src\main\java\com\core\daoInterface\ISTipoUsuarioDAO.java
 E:\PROYECTOS\Netbeans\ConfigSpringHibernateJava\src\main\java\com\core\entity\SUsuario.java
+E:\PROYECTOS\Netbeans\ConfigSpringHibernateJava\src\main\java\com\core\service\STipoUsuarioService.java
 E:\PROYECTOS\Netbeans\ConfigSpringHibernateJava\src\main\java\com\core\serviceInterface\ISUsuarioService.java
+E:\PROYECTOS\Netbeans\ConfigSpringHibernateJava\src\main\java\com\core\dao\STipoUsuarioDAO.java

@@ -5,6 +5,7 @@
  */
 package com.core.controller;
 
+import com.core.serviceInterface.ISTipoUsuarioService;
 import com.core.serviceInterface.ISUsuarioService;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -25,15 +26,23 @@ public class LoginController
 {
     @Autowired
     private ISUsuarioService usuarioService;
+    @Autowired
+    private ISTipoUsuarioService tipousuarioService;
     
     @RequestMapping("/")
     public String inicio(Model model) {
         return "inicio/index";
     }
     @RequestMapping("/usuarios")
-    public ModelAndView passParametersWithModelAndView() {
+    public ModelAndView usuarios() {
         ModelAndView modelAndView = new ModelAndView("usuario/list-of-users");
         modelAndView.addObject("usuarios",usuarioService.getAllUsuario());
+        return modelAndView;
+    }
+    @RequestMapping("/roles")
+    public ModelAndView roles() {
+        ModelAndView modelAndView = new ModelAndView("usuario/list-of-tipoUsers");
+        modelAndView.addObject("roles",tipousuarioService.getAllTipoUsuario());
         return modelAndView;
     }
     @RequestMapping(value = "/login", method = RequestMethod.GET)

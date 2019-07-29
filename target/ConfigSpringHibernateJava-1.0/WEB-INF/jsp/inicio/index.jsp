@@ -14,5 +14,6 @@
 	<input value="Logout" type="submit">
 </form>
         <a href="${pageContext.request.contextPath}/usuarios">Ver Usuarios BDD</a>
+        <a href="${pageContext.request.contextPath}/roles">Roles BDD</a>
 </body>
 </html>
