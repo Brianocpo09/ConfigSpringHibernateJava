@@ -5,8 +5,10 @@
  */
 package com.core.controller;
 
+import com.core.serviceInterface.ISUsuarioService;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.springframework.beans.factory.annotation.Autowired;
  
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -16,13 +18,23 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
  
 @Controller
 public class LoginController
 {
+    @Autowired
+    private ISUsuarioService usuarioService;
+    
     @RequestMapping("/")
     public String inicio(Model model) {
         return "inicio/index";
+    }
+    @RequestMapping("/usuarios")
+    public ModelAndView passParametersWithModelAndView() {
+        ModelAndView modelAndView = new ModelAndView("usuario/list-of-users");
+        modelAndView.addObject("usuarios",usuarioService.getAllUsuario());
+        return modelAndView;
     }
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String loginPage(@RequestParam(value = "error", required = false) String error,

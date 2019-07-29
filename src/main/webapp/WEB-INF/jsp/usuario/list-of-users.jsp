@@ -15,12 +15,15 @@
     <body>
          
             <h1>Lista de Usuarios</h1>
-           <table border="1px" cellpadding="0" cellspacing="0">
+            <table border="1px" cellpadding="0" cellspacing="0">
             <thead>
                 <tr>
                     <th width="10%">Codigo</th>
+                    <th width="10%">Nombre</th>
                     <th width="10%">Usuario</th>
                     <th width="10%">Clave</th>
+                    <th width="10%">Estado</th>
+                    <th width="10%">Rol Usuario</th>
                 </tr>
             </thead>
             <tbody>
@@ -28,7 +31,10 @@
                     <tr>
                         <td><b>${usuario.codigoUsu}</b></td>
                         <td>${usuario.nombreUsu}</td>
+                        <td>${usuario.usuarioUsu}</td>
                         <td>${usuario.claveUsu}</td>
+                        <td>${usuario.estadoUsu}</td>
+                        <td>${usuario.codigoTus.getNombreTus()}</td>
                     </tr>
                 </c:forEach>
             </tbody>
