@@ -18,4 +18,5 @@ public interface ISUsuarioService {
      boolean addUsuario(SUsuario usuario);
      void updateUsuario(SUsuario usuario);
      void deleteUsuario(int pid);
+     SUsuario BuscarUsuario(String usuarioUsu);
 }

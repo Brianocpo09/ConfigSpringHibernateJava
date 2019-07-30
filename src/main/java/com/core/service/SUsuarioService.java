@@ -52,4 +52,10 @@ public class SUsuarioService implements ISUsuarioService{
     public void deleteUsuario(int id) {
        usuarioDAO.deleteUsuario(id);
     }
+    
+    @Override
+    public SUsuario BuscarUsuario(String usuarioUsu){
+        SUsuario usuario=usuarioDAO.BuscarUsuario(usuarioUsu);
+        return usuario;
+    }
 }

@@ -18,4 +18,5 @@ public interface ISUsuarioDAO {
     void updateUsuario(SUsuario usuario);
     void deleteUsuario(int id);
     boolean usuarioExists(String username);
+    SUsuario BuscarUsuario(String username);
 }

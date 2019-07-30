@@ -69,5 +69,13 @@ public class SUsuarioDAO implements ISUsuarioDAO{
         List<SUsuario> usuario = (List<SUsuario>) getCurrentSession().createQuery(hql).list();
         return usuario.size() > 0;
     }
+    @Override
+    public SUsuario BuscarUsuario(String usuarioUsu) {
+        String hql = "FROM SUsuario as u WHERE u.usuarioUsu = :user";
+        SUsuario usuario = (SUsuario) getCurrentSession().createQuery(hql)
+                                      .setParameter("user", usuarioUsu)
+                                      .uniqueResult();
+        return usuario;
+    }
     
 }

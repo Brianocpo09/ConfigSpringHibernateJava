@@ -18,4 +18,5 @@ public interface ISTipoUsuarioService {
      boolean addTipoUsuario(STipoUsuario tipousuario);
      void updateTipoUsuario(STipoUsuario tipousuario);
      void deleteTipoUsuario(int id);
+     String[] StringTipoUsuario();
 }

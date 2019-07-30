@@ -18,5 +18,5 @@ public interface ISTipoUsuarioDAO {
     void addSTipoUsuario(STipoUsuario tipousuario);
     void updateSTipoUsuario(STipoUsuario tipousuario);
     void deleteSTipoUsuario(int id);
-    boolean STipoUsuarioExists(String nombre);
+    String[] StringTipoUsuario();
 }

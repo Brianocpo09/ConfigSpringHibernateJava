@@ -34,13 +34,8 @@ public class STipoUsuarioService implements ISTipoUsuarioService{
 
     @Override
     public synchronized boolean  addTipoUsuario(STipoUsuario tipousuario) {
-        if  (tipousuarioDAO.STipoUsuarioExists(tipousuario.getNombreTus())) {
-    	         return false;
-            } 
-        else{
-    	         tipousuarioDAO.addSTipoUsuario(tipousuario);
-    	         return true;
-            }   
+        tipousuarioDAO.addSTipoUsuario(tipousuario);
+        return true;
     }
 
     @Override
@@ -51,5 +46,9 @@ public class STipoUsuarioService implements ISTipoUsuarioService{
     @Override
     public void deleteTipoUsuario(int id) {
        tipousuarioDAO.deleteSTipoUsuario(id);
+    }
+    @Override
+    public String[] StringTipoUsuario(){
+        return tipousuarioDAO.StringTipoUsuario();
     }
 }

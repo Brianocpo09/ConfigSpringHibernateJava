@@ -40,11 +40,11 @@ public class SUsuario implements Serializable {
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 15)
-    @Column(name = "usuario_usu")
+    @Column(name = "usuario_usu", unique = true)
     private String usuarioUsu;
     @Basic(optional = false)
     @NotNull
-    @Size(min = 1, max = 10)
+    @Size(min = 1, max = 250)
     @Column(name = "clave_usu")
     private String claveUsu;
     @Column(name = "estado_usu")

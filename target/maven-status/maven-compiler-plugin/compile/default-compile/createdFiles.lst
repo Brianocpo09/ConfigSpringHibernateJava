@@ -1,12 +1,13 @@
-com\core\config\SpringSecurityInitializer.class
+com\core\config\WebSecurityConfig.class
 com\core\serviceInterface\ISUsuarioService.class
 com\core\entity\STipoUsuario.class
+com\core\service\UserDetailsServiceImp.class
 com\core\controller\RestControllerMVC.class
 com\core\config\AppInitializer.class
 com\core\serviceInterface\ISTipoUsuarioService.class
 com\core\service\STipoUsuarioService.class
 com\core\config\BddConfig.class
-com\core\config\SecurityConfig.class
+com\core\config\SecurityInitializer.class
 com\core\entity\STipoUsuario_.class
 com\core\config\MvcConfig.class
 com\core\dao\SUsuarioDAO.class

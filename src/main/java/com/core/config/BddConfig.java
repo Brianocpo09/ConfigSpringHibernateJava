@@ -41,7 +41,7 @@ public class BddConfig {
         return sessionFactory;
     }
     
-    @Bean
+    @Bean (name = "dataSource")
     public DataSource getDataSource() throws SQLException {
         BasicDataSource dataSource = new BasicDataSource();
         dataSource.setDriverClassName(environment.getRequiredProperty("postgresql.driver"));
