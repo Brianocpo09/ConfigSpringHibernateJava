@@ -5,8 +5,6 @@
  */
 package com.core.controller;
 
-import com.core.serviceInterface.ISTipoUsuarioService;
-import com.core.serviceInterface.ISUsuarioService;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,14 +18,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+import com.core.service.STipoUsuarioService;
+import com.core.service.SUsuarioService;
  
 @Controller
 public class LoginController
 {
     @Autowired
-    private ISUsuarioService usuarioService;
+    private SUsuarioService usuarioService;
     @Autowired
-    private ISTipoUsuarioService tipousuarioService;
+    private STipoUsuarioService tipousuarioService;
     
     @RequestMapping("/")
     public String inicio(Model model) {

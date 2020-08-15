@@ -5,7 +5,7 @@
  */
 package com.core.config;
 
-import com.core.service.UserDetailsServiceImp;
+import com.core.serviceImp.UserDetailsServiceImp;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;

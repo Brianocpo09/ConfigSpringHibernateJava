@@ -44,7 +44,7 @@ public class SUsuario implements Serializable {
     private String usuarioUsu;
     @Basic(optional = false)
     @NotNull
-    @Size(min = 1, max = 250)
+    @Size(min = 1, max = 10)
     @Column(name = "clave_usu")
     private String claveUsu;
     @Column(name = "estado_usu")

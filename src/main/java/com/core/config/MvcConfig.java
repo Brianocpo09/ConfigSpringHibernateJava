@@ -27,7 +27,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScans(value = { @ComponentScan("com.core")})
+@ComponentScans(value = { @ComponentScan("com.core.controller")})
 public class MvcConfig implements WebMvcConfigurer {
     @Bean
     public ViewResolver getViewResolver() {
